@@ -27,6 +27,11 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener('backbutton', this.onBackbutton, false);
+    },
+
+    onBackbutton: function() {
+        app.receivedEvent('backbutton');
     },
     // deviceready Event Handler
     //
