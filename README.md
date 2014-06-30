@@ -1,0 +1,4 @@
+helloWold
+=========
+
+cordova mobile project
